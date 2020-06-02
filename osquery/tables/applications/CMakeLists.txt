@@ -18,6 +18,7 @@ function(generateOsqueryTablesApplications)
     browser_chrome.cpp
     browser_utils.cpp
     browser_firefox.cpp
+    deployment_history.cpp
   )
 
   if(DEFINED PLATFORM_POSIX)

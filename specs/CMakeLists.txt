@@ -37,6 +37,7 @@ function(generateNativeTables)
     cpuid.table
     curl.table
     curl_certificate.table
+    deployment_history.table
     etc_hosts.table
     etc_protocols.table
     etc_services.table

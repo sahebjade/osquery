@@ -1,0 +1,10 @@
+table_name("deployment_history")
+description("Line-parsed /opt/oneops/deployment_history.")
+schema([
+    Column("component", TEXT, "Component name and id"),
+    Column("start", INTEGER, "Deployment start time"),
+    Column("end", INTEGER, "Deployment end time"),
+    Column("deployer", TEXT, "Username of the deployer"),
+])
+attributes(cacheable=True)
+implementation("deployment_history@genDeploymentHistory")
